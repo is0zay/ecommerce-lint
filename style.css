@@ -171,8 +171,7 @@ a {
 }
 
 .hero1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.242), rgba(0, 0, 0, 0.834)),
-    url("/images/zaygrayhood2.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.242), rgba(0, 0, 0, 0.834)), url("/images/zaygrayhood2.webp");
   background-size: cover;
   width: 90%;
   height: 90vh;
@@ -183,6 +182,13 @@ a {
   justify-content: center;
   gap: 1rem;
   margin-top: 7%;
+}
+
+.hero1:hover {
+	transition: ease .3s;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.034), rgba(0, 0, 0, 0.035)), url("/images/zaygrayhood2.webp");
+	box-shadow: inset;
+	cursor: pointer;
 }
 
 .hero1-h2 {
@@ -245,8 +251,14 @@ a {
   height: auto;
   background-image: url("/images/s2leftuse.webp");
   background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(2, 20, 43, 0.412);
   display: flex;
   flex-direction: column;
+}
+
+.section2-left:hover {
+	cursor: pointer;
+	box-shadow: inset 0 0 0 2000px rgba(2, 20, 43, 0);
 }
 
 .section2-right {
@@ -258,6 +270,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: end;
+}
+
+.section2-right:hover {
+	box-shadow: inset 0 0 0 2000px rgba(2, 20, 43, 0.501);
+	cursor: pointer;
 }
 
 .s2-h3-left {
@@ -543,12 +560,31 @@ a {
   background-color: gray;
 }
 
+.dropdown {
+	width: 15rem;
+	position: relative;
+	margin-top: 7%;
+}
+
+.dropdown * {
+	box-sizing: border-box;
+}
+
+.select {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
 .shop-section {
   width: 100vw;
   height: 100vh;
   z-index: 1;
   margin-left: 5.75%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .shop-grid {

@@ -39,9 +39,14 @@
     
     <main class="index-main">
         <section class="shop-section">
-           <section class="shop-grid" id="shopGrid">
+			<div class="sort-menu">
+				<div class="sort-btn">
+					
+				</div>
+			</div>
+			<section class="shop-grid" id="shopGrid">
             
-           </section>
+			</section>
         </section>
         
 
@@ -120,45 +125,27 @@
             .then((response) => response.json())
             .then((products) => {
 
-                
-    
-                
+
                 for(var i = 0; i<products.length; i++) {
-                    // let img = `<img src="${products[i].img}" alt="" class="productImg"> `;
-                    // let title = `<h2 src="${products[i].title}" class="productTitle">`;
-                    // let description = `<p src="${products[i].description}" class="productDescription">`;
-                    // let price = `<p src="${products[i].price}" class="productPrice">`;
-
-                    // const obj = products[i];
-
-                    // const newDiv = document.createElement("div");
-
-                    // newDiv.innerHTML = `<p>Name: ${obj.title}</p>
-                    //                     <p>Age: ${obj.description}</p>
-                    //                     <p>Email: ${obj.products}</p>`;
-
+					
                     let image = `<img src="${products[i].img}" alt="" class="productImg"> `
                     document.getElementById("shopGrid").innerHTML += "<a href='#' class='tile-a' id='tileClick'>" + "<div class='shop-tile' id='shopTile'>" +image + "<h2 class='shop-h2'>" + products[i].title + "</h2>" + "<p class='shop-description'>" + products[i].description + "</p>" + "<h2 class='shop-h2'>" + '$' + products[i].price + "</h2>" + "</div>" + "</a>";
 
-                
-
-        
-                    // container.appendChild(newDiv);
                 };
 
-                
+
                 
             });
 
-            //Hamburger Menu
-const hamburger = document.querySelector(".hamburger");
-const navigation = document.querySelector(".nav-left");
+			//Hamburger Menu
+			const hamburger = document.querySelector(".hamburger");
+			const navigation = document.querySelector(".nav-left");
 
-hamburger.addEventListener("click", () => {
-    navigation.classList.toggle("active");
-});
+			hamburger.addEventListener("click", () => {
+				navigation.classList.toggle("active");
+			});
 
-document.querySelectorAll(".")
+			document.querySelectorAll(".");
 
         
     </script>
