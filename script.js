@@ -15,6 +15,8 @@ arrowButtons.forEach((icon) => {
     });
 });
 
+// Could not get drag events to work properly, will revisit this later
+/*
 const dragBegin = function(e) {
     // updating global variables value on mouse down event
     dragStartPostition = true;
@@ -40,10 +42,14 @@ const dragEnd = () => {
     dragStartPostition = false;
     // carousel.classList.remove("dragging");
 }
+*/
 
 carousel.addEventListener("mousedown", dragBegin);
 carousel.addEventListener("mousemove", dragging);
 carousel.addEventListener("mouseup", dragEnd); // this sets isDragging to false once the user released the mouse btn, which stops images from sliding untill clicked again
+
+
+
 
 
 

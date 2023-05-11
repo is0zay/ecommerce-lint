@@ -125,13 +125,12 @@
     <script type="text/javascript">
 
 
-        fetch('./products.json')
-            .then((response) => response.json())
-            .then((products) => {
+        fetch('./products.json')					//Get request to grad contents of json file
+            .then((response) => response.json())	// .then Converts the response to the request into JSON OBJECT
+            .then((products) => {					// .then takes the json object from the previous then resoonse and iterates through each object and creates a div for each object
 				
-				// Display image title description and price from JSON files using DOM manipulation
-				// Use for loop to iterate through the entire JSON file
-                for(var i = 0; i<products.length; i++) {
+				
+                for(var i = 0; i<products.length; i++) { 
 					
                     let image = `<img src="${products[i].img}" alt="" class="productImg"> `
                     document.getElementById("shopGrid").innerHTML += "<a href='#' class='tile-a' id='tileClick'>" + "<div class='shop-tile' id='shopTile'>" +image + "<h2 class='shop-h2'>" + products[i].title + "</h2>" + "<p class='shop-description'>" + products[i].description + "</p>" + "<h2 class='shop-h2'>" + '$' + products[i].price + "</h2>" + "</div>" + "</a>";
