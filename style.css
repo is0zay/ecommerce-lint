@@ -163,7 +163,7 @@ a {
 }
 
 .index-main {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: relative;
   overflow-y: scroll;
@@ -440,14 +440,22 @@ a {
 
   .twosection2 {
     height: calc(100vh / 3.5);
-  }
+  } 
 
   .home-section4 {
     height: calc(100vh / 6);
   }
 
+  .shop-section {
+	margin-top: 5%;
+  }
+
   .shop-grid {
     margin-left: 5%;
+  }
+
+  .help-1 {
+	margin-top: 200px;
   }
 }
 
@@ -507,7 +515,20 @@ a {
   .hero1 {
     margin-top: 4.5rem;
   }
+
+ .shop-section {
+	margin-top: 15%;
+ }
+
+ .contact-grid {
+	flex-direction: column;
+	align-items: center;
+	margin-right: 10%;
+ }
+
+
 }
+
 
 /* Shop Page Begins */
 
@@ -588,7 +609,7 @@ a {
 }
 
 .shop-grid {
-  margin-top: 7%;
+  margin-top: 3%;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
@@ -626,7 +647,7 @@ a {
   margin-left: 5%;
   margin-right: 5%;
   width: 100%;
-  height: calc(100vh / 3);
+  
 }
 
 .help-h3 {
@@ -637,10 +658,11 @@ a {
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-around;
   margin-right: 8%;
   margin-top: 5%;
+  gap: 1rem;
 }
 
 .contact-card {
@@ -652,7 +674,7 @@ a {
 }
 
 .card-icon {
-  font-size: 5rem;
+  font-size: 4vw;
 }
 
 .card-h4 {
@@ -666,13 +688,14 @@ a {
 }
 
 .help-2 {
-  margin-top: 2%;
+  margin-top: 4%;
   width: 100%;
   height: calc(100vh / 3);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .help-h2 {
@@ -715,9 +738,9 @@ a {
   }
   
   .faq-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	margin-left: 8%;
+	display: flex;
+	justify-content: space-around;
+	margin-right: 4%;
 	margin-top: 5%;
   }
   
@@ -744,7 +767,7 @@ a {
   }
 
   .contact-two {
-	display: grid;
+	display: flex;
 	grid-template-columns: repeat(2, 1fr);
 	width: 100%;
 	height: 80vh;
@@ -752,7 +775,7 @@ a {
   }
   
   .contact-left {
-	max-width: 100%;
+	width: 45vw;
 	height: auto;
 	background-image: url("/images/s2leftuse.webp");
 	background-size: cover;
@@ -764,15 +787,14 @@ a {
   
   .contact-right {
 	padding: 1rem;
-  width: 50%;
-  margin: auto;
-  color: rgb(255, 255, 255)
+  	margin: auto;
+  	color: rgb(255, 255, 255)
   }
 
   .contact-h3-left {
 	color: whitesmoke;
 	font-family: "Public Sans", sans-serif;
-	font-size: 8rem;
+	font-size: 2rem;
 	text-align: center;
 	margin-left: 3%;
 	margin-top: 2%;
@@ -849,8 +871,8 @@ textarea:focus {
 .form-button {
     padding: .5rem 1rem;
     margin-top: 1rem;
-    color: #000;
-    background-color: rgb(253, 239, 189);
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
     border-radius: .25rem;
     
 }
@@ -860,3 +882,42 @@ textarea:focus {
     background-color: rgb(7, 83, 3);
     cursor: pointer;
 }
+
+
+.dropdown {
+	width: 8rem;
+	margin-left: 60%;
+  }
+
+  .dropBtn {
+	font-size: 1rem;
+	font-family: 'Public Sans', sans-serif;
+
+  }
+  
+  /* Style the dropdown content */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	border-radius: 5px;
+  }
+  
+  /* Show the dropdown content when the dropdown button is clicked */
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  /* Style the options inside the dropdown */
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change the background color of the dropdown options on hover */
+  .dropdown-content a:hover {
+	background-color: #f1f1f1;
+  }
