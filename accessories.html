@@ -129,21 +129,21 @@
             .then((response) => response.json())
             .then((products) => {
 
-
+				// Display image title description and price from JSON files using DOM manipulation
+				// Use for loop to iterate through the entire JSON file
                 for(var i = 0; i<products.length; i++) {
                     let image = `<img src="${products[i].img}" alt="" class="productImg"> `
                     document.getElementById("shopGrid").innerHTML +=  "<div class='shop-tile' id='shopTile'>" +image + "<h2 class='shop-h2'>" + products[i].title + "</h2>" + "<p class='shop-description'>" + products[i].description + "</p>" + "<h2 class='shop-h2'>" + '$' + products[i].price + "</h2>" + "</div>";
 
                 };
 
-                
-                
             });
 
 			//Hamburger Menu
 			const hamburger = document.querySelector(".hamburger");
 			const navigation = document.querySelector(".nav-left");
 
+			// click event adds the class of active to display the hidden nav menu
 			hamburger.addEventListener("click", () => {
 				navigation.classList.toggle("active");
 			});

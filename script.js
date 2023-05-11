@@ -1,3 +1,5 @@
+// Call on elements form html file to give functionality
+//Image slider/carousel 
 const carousel = document.querySelector(".section3-carousel");
 const firstSlide = carousel.querySelectorAll("img")[0];
 const arrowButtons = document.querySelectorAll(".wrapper i");
@@ -49,8 +51,7 @@ carousel.addEventListener("mouseup", dragEnd); // this sets isDragging to false 
 const hamburger = document.querySelector(".hamburger");
 const navigation = document.querySelector(".nav-left");
 
+// click event adds the class of active to display the hidden nav menu
 hamburger.addEventListener("click", () => {
     navigation.classList.toggle("active");
 });
-
-document.querySelectorAll(".")

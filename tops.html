@@ -129,45 +129,22 @@
             .then((response) => response.json())
             .then((products) => {
 
-                
-    
-                
+				// Display image title description and price from JSON files using DOM manipulation
+				// Use for loop to iterate through the entire JSON file
                 for(var i = 0; i<products.length; i++) {
-                    // let img = `<img src="${products[i].img}" alt="" class="productImg"> `;
-                    // let title = `<h2 src="${products[i].title}" class="productTitle">`;
-                    // let description = `<p src="${products[i].description}" class="productDescription">`;
-                    // let price = `<p src="${products[i].price}" class="productPrice">`;
-
-                    // const obj = products[i];
-
-                    // const newDiv = document.createElement("div");
-
-                    // newDiv.innerHTML = `<p>Name: ${obj.title}</p>
-                    //                     <p>Age: ${obj.description}</p>
-                    //                     <p>Email: ${obj.products}</p>`;
-
                     let image = `<img src="${products[i].img}" alt="" class="productImg"> `
                     document.getElementById("shopGrid").innerHTML +=  "<div class='shop-tile' id='shopTile'>" +image + "<h2 class='shop-h2'>" + products[i].title + "</h2>" + "<p class='shop-description'>" + products[i].description + "</p>" + "<h2 class='shop-h2'>" + '$' + products[i].price + "</h2>" + "</div>";
-
-                
-
-        
-                    // container.appendChild(newDiv);
                 };
-
-                
-                
             });
 
             //Hamburger Menu
-const hamburger = document.querySelector(".hamburger");
-const navigation = document.querySelector(".nav-left");
+			const hamburger = document.querySelector(".hamburger");
+			const navigation = document.querySelector(".nav-left");
 
-hamburger.addEventListener("click", () => {
-    navigation.classList.toggle("active");
-});
-
-document.querySelectorAll(".")
+			// click event adds the class of active to display the hidden nav menu
+			hamburger.addEventListener("click", () => {
+				navigation.classList.toggle("active");
+			});
 
         
     </script>

@@ -128,8 +128,9 @@
         fetch('./products.json')
             .then((response) => response.json())
             .then((products) => {
-
-
+				
+				// Display image title description and price from JSON files using DOM manipulation
+				// Use for loop to iterate through the entire JSON file
                 for(var i = 0; i<products.length; i++) {
 					
                     let image = `<img src="${products[i].img}" alt="" class="productImg"> `
@@ -145,6 +146,7 @@
 			const hamburger = document.querySelector(".hamburger");
 			const navigation = document.querySelector(".nav-left");
 
+			// click event adds the class of active to display the hidden nav menu
 			hamburger.addEventListener("click", () => {
 				navigation.classList.toggle("active");
 			});
