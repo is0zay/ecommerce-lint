@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css".css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>HomexGrown Help</title>
+</head>
+<body>
+    <header class="nav-head">
+        <nav class="main-nav">
+            <div class="hamburger">
+                <li><i class="fa-solid fa-bars"></i></li>
+            </div>
+            <ul class="nav-left">
+                <li><a href="shop.html" class="nav-link">SHOP</a></li>
+                <li><a href="tops.html" class="nav-link">TOPS</a></li>
+                <li><a href="bottoms.html" class="nav-link">BOTTOMS</a></li>
+                <li><a href="accessories.html" class="nav-link">ACCESSORIES</a></li>
+            </ul>
+            <ul class="nav-middle">
+                <li class="middle-link"><a href="index.html"><img src="/images/hglogo.avif" alt="" class="head-logo"></a></li>
+            </ul>
+           <ul class="nav-right">
+                <li><a href="#"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
+           </ul>
+        </nav>
+    </header>
+    
+    <main class="index-main">
+        <section class="help-1">
+            <h3 class="help-h3">Contact</h3>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fa-solid fa-mobile-screen-button card-icon"></i>
+                    <h4 class="card-h4">Products & Orders</h4>
+                    <p class="card-p">1-800-555-5555</p>
+                    <p class="card-p">9 am - 9pm ET</p>
+                    <p class="card-p">Mon - Fri</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-regular fa-envelope card-icon"></i>
+                    <h4 class="card-h4">Company Info & Inquiries</h4>
+                    <p class="card-p">EMAIL US</p>
+                    <p class="card-p">support@homexgrown.com</p>
+                    <p class="card-p">Mon - Fri</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-location-dot card-icon"></i>
+                    <h4 class="card-h4">Location</h4>
+                    <p class="card-p">CHARLOTTE, N.C.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="help-2">
+            <h2 class="help-h2">Get Help</h2>
+            <form class="searchbar">
+                <input class="search" type="search" placeholder="Search..">
+                <button class="search-icon" type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </section>
+
+		<section class="help-3">
+            <h3 class="help-h3">FAQ</h3>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h4 class="faq-h4">Shipping & Delivery</h4>
+                    <p class="card-p">What are HG's shipping options?</p>
+                    <p class="card-p">How long do orders take to ship out?</p>
+                </div>
+                <div class="faq-card">
+                    <h4 class="faq-h4">Orders</h4>
+                    <p class="card-p">Where is my order?</p>
+                    <p class="card-p">Can I cancel my order?</p>
+					<p class="card-p">How do I find the right size and fit?</p>
+                </div>
+				<div class="faq-card">
+                    <h4 class="faq-h4">Returns</h4>
+                    <p class="card-p">What is HG's return?</p>
+                    <p class="card-p">How do I return my HG order?</p>
+					<p class="card-p">Where is my refund?</p>
+                </div>
+            </div>
+        </section>
+
+		<section class="contact-section">
+            <div class="contact-two">
+                <div class="contact-left">
+                    <h3 class="contact-h3-left">Contact Us</h3> 
+                </div>
+                <div class="contact-right">
+					<form class="contact-form" action="submit">
+						<div class="form-input-field">   
+							<label for="fname">First Name:</label>
+							<input type="text" name="fname" id="fname" placeholder="Your first name..." required>
+						</div>
+	
+						<div class="form-input-field">
+							<label for="lname">Last Name:</label>
+							<input type="text" name="lname" id="lname" placeholder="Your last name..." required>
+						</div>
+	
+						<div class="form-input-field">
+							<label for="email">Email Address:</label>
+							<input type="email" name="email" id="email" placeholder="Email address..." required>
+						</div>
+	
+						<div class="form-input-field">
+							<label for="phone">Phone Number:</label>
+							<input type="text" name="phone" id="phone" placeholder="(optional) phone number here...">
+						</div>
+						
+						<div class="form-input-field">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" rows="5" cols="33" placeholder="Enter your message here..." required></textarea>
+						</div>
+	
+						<button class="form-button" type="submit">Submit</button>
+					</form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <ul class="foot-list-vert">
+                <li><a href="#" class="footer-link1">Gift Cards</a></li>
+                <li><a href="#" class="footer-link1">Promotions</a></li>
+                <li><a href="#" class="footer-link1">Find a store</a></li>
+                <li><a href="#" class="footer-link1">sign up for email</a></li>
+                <li><a href="#" class="footer-link1">become a member</a></li>
+                <li><a href="#" class="footer-link1">homexgrown book</a></li>
+                <li><a href="#" class="footer-link1">send us feedback</a></li>
+            </ul>
+
+            <ul class="foot-list-vert">
+                <li><a href="help.html" class="footer-link1">GET HELP</a></li>
+                <li><a href="#" class="footer-link2">Order Status</a></li>
+                <li><a href="#" class="footer-link2">Shipping and Delivery</a></li>
+                <li><a href="#" class="footer-link2">Returns</a></li>
+                <li><a href="#" class="footer-link2">Order Cancellation</a></li>
+                <li><a href="#" class="footer-link2">Payment Options</a></li>
+                <li><a href="#" class="footer-link2">Contact Us</a></li>
+            </ul>
+
+            <ul class="foot-list-vert">
+                <li><a href="#" class="footer-link1">About HomeGrown</a></li>
+                <li><a href="#" class="footer-link2">News</a></li>
+                <li><a href="#" class="footer-link2">Careers</a></li>
+                <li><a href="#" class="footer-link2">Investors</a></li>
+                <li><a href="#" class="footer-link2">Purpose</a></li>
+                <li><a href="#" class="footer-link2">Sustainability</a></li>
+
+            </ul>
+
+            <ul class="footer-list-social">
+                <li class="footer-item"><a href="https://www.facebook.com/" target="_blank" aria-label="facebook link" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="footer-item"><a href="https://twitter.com/" target="_blank" aria-label="twitter link" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="footer-item"><a href="https://www.instagram.com/thehomexgrown/" target="_blank" aria-label="instagram link" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <div class="fbl-left1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="fblp">United States</p>
+                </div>
+                <div class="fbl-left2">
+                    <p class="copyright">&copy; 2023 HomexGrown All Rights Reserved</p>
+                </div>
+            </div>
+            <div class="footer-bottom-right">
+                <div class="fbr-top">
+                    <ul class="fbr-list">
+                        <li><p>Terms of Sale</p></li>
+                        <li><p>Terms of Use</p></li>
+                        <li><p>HxG Privacy Policy</p></li>
+                        <li><p>Your Privacy Choices</p></li>
+                    </ul>
+                </div>
+                <div class="fbr-bottom">
+                    <p>CA Supply Chains Act</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
